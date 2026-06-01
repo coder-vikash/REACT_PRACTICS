@@ -1,0 +1,178 @@
+{
+  "quiz": [
+    {
+      "id": 2,
+      "question": "Which HTML tag is used to define an unordered list?",
+      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "answer": "<ul>"
+    },
+    {
+      "id": 3,
+      "question": "In CSS, which property controls the text size?",
+      "options": ["font-style", "text-size", "font-size", "text-style"],
+      "answer": "font-size"
+    },
+    {
+      "id": 4,
+      "question": "Which CSS property is used to change the background color?",
+      "options": ["color", "background-color", "bgcolor", "background"],
+      "answer": "background-color"
+    },
+    {
+      "id": 5,
+      "question": "What does the 'position: absolute' property do in CSS?",
+      "options": [
+        "Positions relative to parent",
+        "Positions relative to nearest positioned ancestor",
+        "Positions relative to viewport",
+        "Positions relative to document"
+      ],
+      "answer": "Positions relative to nearest positioned ancestor"
+    },
+    {
+      "id": 6,
+      "question": "Which JavaScript method is used to select an element by ID?",
+      "options": [
+        "getElementById()",
+        "querySelector()",
+        "getElement()",
+        "getId()"
+      ],
+      "answer": "getElementById()"
+    },
+    {
+      "id": 7,
+      "question": "What is the default display property of a <div> element?",
+      "options": ["inline", "block", "inline-block", "flex"],
+      "answer": "block"
+    },
+    {
+      "id": 8,
+      "question": "Which HTML attribute is used to provide alternative text for an image?",
+      "options": ["title", "alt", "src", "href"],
+      "answer": "alt"
+    },
+    {
+      "id": 9,
+      "question": "Which JavaScript keyword is used to declare a constant?",
+      "options": ["var", "let", "const", "static"],
+      "answer": "const"
+    },
+    {
+      "id": 10,
+      "question": "What does DOM stand for?",
+      "options": [
+        "Document Object Model",
+        "Data Object Management",
+        "Digital Object Model",
+        "Document Order Management"
+      ],
+      "answer": "Document Object Model"
+    },
+    {
+      "id": 11,
+      "question": "What is the difference between functional and class components in React?",
+      "options": [
+        "Functional components are stateless, class components are stateful",
+        "Functional components use hooks, class components use lifecycle methods",
+        "Functional components are faster",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "id": 12,
+      "question": "What does the useState hook do?",
+      "options": [
+        "Manages side effects",
+        "Provides state in functional components",
+        "Handles routing",
+        "Updates the DOM directly"
+      ],
+      "answer": "Provides state in functional components"
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of useEffect in React?",
+      "options": [
+        "To manage state",
+        "To handle side effects like data fetching",
+        "To update props",
+        "To create context"
+      ],
+      "answer": "To handle side effects like data fetching"
+    },
+    {
+      "id": 14,
+      "question": "What is the virtual DOM in React?",
+      "options": [
+        "A copy of the real DOM",
+        "A lightweight representation of the real DOM",
+        "A database",
+        "A CSS engine"
+      ],
+      "answer": "A lightweight representation of the real DOM"
+    },
+    {
+      "id": 15,
+      "question": "What is JSX?",
+      "options": [
+        "A templating language",
+        "A syntax extension for JavaScript",
+        "A CSS preprocessor",
+        "A database query language"
+      ],
+      "answer": "A syntax extension for JavaScript"
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between props and state?",
+      "options": [
+        "Props are immutable, state is mutable",
+        "Props are passed from parent, state is managed locally",
+        "Props trigger re-renders, state triggers updates",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "id": 17,
+      "question": "What is React Context used for?",
+      "options": [
+        "Managing global state",
+        "Handling side effects",
+        "Optimizing performance",
+        "Routing"
+      ],
+      "answer": "Managing global state"
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between useMemo and useCallback?",
+      "options": [
+        "useMemo memoizes values, useCallback memoizes functions",
+        "Both memoize functions",
+        "Both memoize values",
+        "Neither memoizes anything"
+      ],
+      "answer": "useMemo memoizes values, useCallback memoizes functions"
+    },
+    {
+      "id": 19,
+      "question": "What is React Fiber?",
+      "options": [
+        "A new reconciliation algorithm",
+        "A CSS library",
+        "A database engine",
+        "A testing framework"
+      ],
+      "answer": "A new reconciliation algorithm"
+    },
+    {
+      "id": 20,
+      "question": "Which React hook is used to manage state in a functional component?",
+      "options": ["useEffect", "useState", "useReducer", "useContext"],
+      "answer": "useState"
+    }
+  ]
+}
