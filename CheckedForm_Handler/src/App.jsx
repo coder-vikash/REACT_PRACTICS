@@ -7,14 +7,20 @@ function App() {
     js: false,
   });
 
+  const HandleChange = (e) => {
+    const { name, checked } = e.target;
+    setCheck({ ...check, [name]: checked });
+  };
+
   return (
     <div>
       <label htmlFor="html">
         <input
           type="checkbox"
           id="html"
+          name="html"
           checked={check.html}
-          onChange={(e) => setCheck({ ...check, html: e.target.checked })}
+          onChange={HandleChange}
         />
         This is HTML
       </label>
@@ -23,8 +29,9 @@ function App() {
         <input
           type="checkbox"
           id="css"
+          name="css"
           checked={check.css}
-          onChange={(e) => setCheck({ ...check, css: e.target.checked })}
+          onChange={HandleChange}
         />
         This is CSS
       </label>
@@ -33,8 +40,9 @@ function App() {
         <input
           type="checkbox"
           id="js"
+          name="js"
           checked={check.js}
-          onChange={(e) => setCheck({ ...check, js: e.target.checked })}
+          onChange={HandleChange}
         />
         This is JS
       </label>
