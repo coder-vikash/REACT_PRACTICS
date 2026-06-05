@@ -1,23 +1,54 @@
 import { useState } from "react";
 
 function App() {
-  const [paymentMode, setPaymentMode] = useState("");
+  const [Country, setCountry] = useState("");
+  const [city, setCity] = useState("");
 
-  console.log(paymentMode);
+  const country = {
+    India: ["Bangalore", "Delhi", "Mumbai"],
+    Japan: ["Tokyo", "Osaka"],
+    USA: ["New York", "Los Angeles"],
+    China: ["Beijing", "Shanghai"],
+  };
+
+  console.log(Country, city);
 
   return (
     <div>
+      {/* Country dropdown */}
       <select
-        value={paymentMode}
+        value={Country}
         onChange={(e) => {
-          setPaymentMode(e.target.value);
+          setCountry(e.target.value);
+          setCity("");
         }}
       >
-        <option value="">--Select Payment Mode</option>
-        <option value="upi">Upi</option>
-        <option value="card">Card</option>
-        <option value="netbanking">NetBanking</option>
+        <option value="">--Select Country--</option>
+        {Object.keys(country).map((items) => (
+          <option value={items} key={items}>
+            {items.toLocaleUpperCase()}
+          </option>
+        ))}
       </select>
+
+      {/* City dropdown (only shows when a country is selected) */}
+      {Country && (
+        <select
+          value={city}
+          onChange={(e) => {
+            setCity(e.target.value);
+          }}
+        >
+          <option value="">--Select City--</option>
+          {country[Country].map((items) => (
+            <option value={items} key={items}>
+              {items.toLocaleUpperCase()}
+            </option>
+          ))}
+        </select>
+      )}
+      <p>Country : {Country}</p>
+      <p>City : {city}</p>
     </div>
   );
 }
