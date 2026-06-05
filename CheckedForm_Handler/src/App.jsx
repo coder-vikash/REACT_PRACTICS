@@ -1,19 +1,24 @@
 import { useState } from "react";
-import { SingleCheck } from "./component/SingleCheck";
-import { GroupCheckBox } from "./component/GroupCheckBox";
 
 function App() {
-  const [check, setCheck] = useState({
-    html: false,
-    css: false,
-    js: false,
-  });
+  const [paymentMode, setPaymentMode] = useState("");
+
+  console.log(paymentMode);
 
   return (
-    <>
-      {/* <SingleCheck check={check} setCheck={setCheck} /> */}
-      <GroupCheckBox check={check} setCheck={setCheck} />
-    </>
+    <div>
+      <select
+        value={paymentMode}
+        onChange={(e) => {
+          setPaymentMode(e.target.value);
+        }}
+      >
+        <option value="">--Select Payment Mode</option>
+        <option value="upi">Upi</option>
+        <option value="card">Card</option>
+        <option value="netbanking">NetBanking</option>
+      </select>
+    </div>
   );
 }
 
