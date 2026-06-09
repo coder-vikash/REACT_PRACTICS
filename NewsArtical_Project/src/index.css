@@ -1,0 +1,9 @@
+@plugin "daisyui";
+html,
+body {
+  background-color: rgb(25, 30, 36);
+  color: white;
+}
+.scroll-bar {
+  scrollbar-width: none;
+}
