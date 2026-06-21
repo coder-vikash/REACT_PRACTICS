@@ -38,7 +38,7 @@
 import { useState, useEffect } from "react";
 
 export const Timer = ({ setIsOver }) => {
-  const [timer, setTimer] = useState(15); // start at 60 seconds
+  const [timer, setTimer] = useState(20); // start at 60 seconds
   const [formattedTime, setFormattedTime] = useState("01:00");
 
   useEffect(() => {
